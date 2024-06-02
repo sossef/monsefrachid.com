@@ -5,12 +5,67 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+
+
+		
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Monsef Rachid | Software Engineer & Web Developer</title>
+		<style>
+			body
+			{
+				font-family: "Work Sans", sans-serif;
+				font-optical-sizing: auto;
+				font-style: normal;
+			}
+			.uppercase {
+				font-family: "Archivo Black", sans-serif;
+				font-weight: 400;
+				font-style: normal;
+			}
+			
+		</style>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		
+		<div class="flex justify-between items-center h-24 px-12 shadow-md">
+
+			<div class="flex justify-start items-center gap-x-4">
+				<div class="bg-gray-400 w-16 h-16 rounded-full">
+
+				</div>
+				<div class="text-xl font-bold uppercase text-black">
+					Monsef Rachid
+				</div>
+			</div>
+
+			<div class="flex justify-between items-center gap-x-12">
+				<a href="#" class="text-xl font-bold uppercase text-black hover:text-indigo-600">Home</a>
+				<a href="#" class="text-xl font-bold uppercase text-black hover:text-indigo-600">About</a>
+				<a href="#" class="text-xl font-bold uppercase text-black hover:text-indigo-600">Projects</a>
+				<a href="#" class="text-xl font-bold uppercase text-black hover:text-indigo-600">Contact</a>
+			</div>
+
+		</div>
+
+		<div class="flex flex-col justify-center items-center text-center h-[calc(100vh-6rem)] bg-[url('/img/hero-bg-1.jpg')] bg-cover bg-center">
+			<div class="px-12 space-y-10">
+				<h1 class="text-black text-5xl font-extrabold uppercase">Hey, I'm Monsef Rachid</h1>
+				<h2 class="text-xl max-w-4xl m-auto">Software engineer with experience in web application development and information retrieval across a wide range of industries. Passionate about delivering high-quality clean code and user-focused web solutions that meet business needs and exceed expectations.</h2>
+				<button class="bg-indigo-600 hover:bg-indigo-700 text-white text-xl uppercase font-semibold py-4 px-12 rounded">
+					My Projects
+				</button>
+			</div>			
+		</div>
+		
+
 	</body>
 </html>
