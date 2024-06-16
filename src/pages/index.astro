@@ -8,6 +8,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Freeman&family=Lilita+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e9800c51cf.js" crossorigin="anonymous"></script>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
@@ -32,7 +33,7 @@
 	</head>
 	<body x-data="{ showMobileNav: false }">
 		
-		<div class="flex justify-between items-center h-20 px-4 lg:px-12 shadow-md">
+		<div class="flex justify-between items-center h-20 px-4 lg:px-12 shadow-md fixed w-full bg-white">
 
 			<div class="flex justify-start items-center gap-x-2">
 				<div class="bg-gray-400 w-14 h-14 rounded-full">
@@ -44,10 +45,10 @@
 			</div>
 
 			<div class="hidden lg:flex justify-between items-center gap-x-12 text-lg font-bold uppercase text-black">
-				<a href="#" class="hover:text-sky-600">Home</a>
-				<a href="#" class="hover:text-sky-600">About</a>
-				<a href="#" class="hover:text-sky-600">Projects</a>
-				<a href="#" class="hover:text-sky-600">Contact</a>
+				<a href="/" class="hover:text-sky-600">Home</a>
+				<a href="#about" class="hover:text-sky-600">About</a>
+				<a href="#projects" class="hover:text-sky-600">Projects</a>
+				<a href="#contact" class="hover:text-sky-600">Contact</a>
 			</div>
 
 			<div class="block lg:hidden">
@@ -84,15 +85,15 @@
 			</div>
 
 			<div class="divide-y-2 text-xl font-bold uppercase px-5">
-				<a href="#" class="block py-4 text-black hover:text-sky-600">Home</a>
-				<a href="#" class="block py-4 text-black hover:text-sky-600">About</a>
-				<a href="#" class="block py-4 text-black hover:text-sky-600">Projects</a>
-				<a href="#" class="block py-4 text-black hover:text-sky-600">Contact</a>
+				<a href="/" class="block py-4 text-black hover:text-sky-600">Home</a>
+				<a href="#about" class="block py-4 text-black hover:text-sky-600">About</a>
+				<a href="#projects" class="block py-4 text-black hover:text-sky-600">Projects</a>
+				<a href="#contact" class="block py-4 text-black hover:text-sky-600">Contact</a>
 			</div>
 
 		</div>
 
-		<section class="flex flex-col justify-center items-center text-center h-[calc(100vh-5rem)] bg-[url('/img/hero-bg-4.jpg')] bg-cover bg-center">
+		<section class="flex flex-col justify-center items-center text-center h-[calc(100vh)] bg-[url('/img/hero-bg-4.jpg')] bg-cover bg-center">
 			<div class="w-full max-w-7xl mx-auto px-6 space-y-8">
 				<h1 class="text-black text-4xl font-bold uppercase">Hey, I'm Monsef Rachid</h1>
 				<h2 class="lg:text-xl">Software engineer with experience in web application development and information retrieval across a wide range of industries. Passionate about delivering high-quality clean code and user-focused web solutions that meet business needs and exceed expectations.</h2>
@@ -254,7 +255,31 @@
 			</div>
 
 		</section>
-		
 
+		<footer class="bg-gradient-to-l from-gray-900 to-black text-gray-100">
+
+			<div class="w-full max-w-7xl mx-auto px-6">
+			
+				<div class="grid grid-cols-2 gap-56 py-20 border-b border-gray-700">	
+					<div class="col-span-full lg:col-span-1 space-y-4">
+						<div class="text-2xl uppercase">Monsef Rachid</div>
+						<p class="text-sm">Information technology consultant and software engineer with extensive experience in web application development and information retrieval across a wide range of industries.</p>
+					</div>	
+					<div class="col-span-full lg:col-span-1 space-y-4">
+						<div class="text-2xl uppercase">Social</div>
+						<div class="flex justify-start gap-x-4 text-2xl">
+							<a class="hover:text-sky-400" target="_blank" href="https://www.linkedin.com/in/monsef-rachid-92720a41/"><i class="fa-brands fa-linkedin-in"></i></a>
+							<a class="hover:text-sky-400" target="_blank" href="https://github.com/sossef"><i class="fa-brands fa-github"></i></a>
+						</div>
+					</div>	
+				</div>	
+				<div class="py-8 text-sm text-center">
+					Copyright 2024. Made by <b>Monsef Rachid</b>
+				</div>	
+			</div>
+
+		</footer>
+		
+		
 	</body>
 </html>
