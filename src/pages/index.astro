@@ -34,8 +34,7 @@
 
 	<body x-data="{ showMobileNav: false }">
 		
-		<div class="flex justify-between items-center h-20 px-4 lg:px-12 shadow-md fixed w-full bg-white">
-
+		<div class="nav flex justify-between items-center h-20 px-4 lg:px-12 shadow-md fixed w-full bg-white">
 			<div class="flex justify-start items-center gap-x-2">
 				<div class="bg-gray-400 w-14 h-14 rounded-full">
 
@@ -44,20 +43,17 @@
 					Monsef Rachid
 				</div>
 			</div>
-
 			<div class="hidden lg:flex justify-between items-center gap-x-12 text-lg font-bold uppercase text-black">
 				<a href="/" class="hover:text-sky-600">Home</a>
 				<a href="#about" class="hover:text-sky-600">About</a>
 				<a href="#projects" class="hover:text-sky-600">Projects</a>
 				<a href="#contact" class="hover:text-sky-600">Contact</a>
 			</div>
-
 			<div class="block lg:hidden">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" @click="showMobileNav = !showMobileNav">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 				</svg>
 			</div>
-
 		</div>
 
 		<div
@@ -385,7 +381,23 @@
 					Copyright 2024. Made by <b>Monsef Rachid</b>
 				</div>	
 			</div>
-		</footer>		
+		</footer>	
+		
+		<script>
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+					const targetId = this.getAttribute('href');
+					const targetElement = document.querySelector(targetId);
+
+					window.scrollTo({
+						top: targetElement.offsetTop - document.querySelector('.nav').clientHeight,
+						behavior: 'smooth'
+					});
+				});
+			});
+
+		</script>
 		
 	</body>
 
