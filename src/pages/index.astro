@@ -31,6 +31,7 @@
 			
 		</style>
 	</head>
+
 	<body x-data="{ showMobileNav: false }">
 		
 		<div class="flex justify-between items-center h-20 px-4 lg:px-12 shadow-md fixed w-full bg-white">
@@ -60,7 +61,7 @@
 		</div>
 
 		<div
-			class="absolute w-full max-w-96 h-max min-h-lvh bg-gray-50 shadow-2xl inset-0"
+			class="fixed top-0 left-0 w-full max-w-96 h-max min-h-lvh bg-gray-50 shadow-2xl"
 			x-cloak
 			x-show="showMobileNav"
 			x-transition:enter="transition ease-out duration-300"
@@ -73,7 +74,7 @@
 			<div class="flex justify-between items-center h-20 shadow px-4">
 				<div class="flex justify-start items-center gap-x-2">
 					<div class="bg-gray-400 w-14 h-14 rounded-full">
-	
+
 					</div>
 					<div class="text-xl font-bold uppercase text-black">
 						Monsef Rachid
@@ -81,14 +82,14 @@
 				</div>
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" @click="showMobileNav = false">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-				</svg>		
+				</svg>      
 			</div>
 
 			<div class="divide-y-2 text-xl font-bold uppercase px-5">
-				<a href="/" class="block py-4 text-black hover:text-sky-600">Home</a>
-				<a href="#about" class="block py-4 text-black hover:text-sky-600">About</a>
-				<a href="#projects" class="block py-4 text-black hover:text-sky-600">Projects</a>
-				<a href="#contact" class="block py-4 text-black hover:text-sky-600">Contact</a>
+				<a href="/" class="block py-4 text-black hover:text-sky-600" @click="showMobileNav = false">Home</a>
+				<a href="#about" class="block py-4 text-black hover:text-sky-600" @click="showMobileNav = false">About</a>
+				<a href="#projects" class="block py-4 text-black hover:text-sky-600" @click="showMobileNav = false">Projects</a>
+				<a href="#contact" class="block py-4 text-black hover:text-sky-600" @click="showMobileNav = false">Contact</a>
 			</div>
 
 		</div>
@@ -387,4 +388,5 @@
 		</footer>		
 		
 	</body>
+
 </html>
