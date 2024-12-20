@@ -12,7 +12,7 @@ document.addEventListener('alpine:init', () => {
         errorMessage: '',
 
         submitData() {
-            fetch('http://127.0.0.1:5000/submit', {
+            fetch('https://mrpa2025.pythonanywhere.com/submit', {
                 method: 'POST',
                 headers: { 
                     'Content-Type': 'application/json',
