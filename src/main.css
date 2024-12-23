@@ -1,1 +1,16 @@
 [x-cloak] { display: none !important; }
+
+body
+{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.uppercase {
+    font-family: "Archivo Black", sans-serif;
+    font-family: "Freeman", sans-serif;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .2em;
+}
