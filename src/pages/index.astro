@@ -9,7 +9,13 @@ import '../main.css';
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Freeman&family=Lilita+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/e9800c51cf.js" crossorigin="anonymous"></script>
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+		<link rel="manifest" href="/site.webmanifest.json" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Monsef Rachid | Software Engineer & Web Developer</title>
@@ -105,6 +111,10 @@ import '../main.css';
 			<div class="flex flex-col items-center w-full max-w-7xl mx-auto px-6">
 
 				<h2 class="block text-black text-3xl lg:text-4xl font-bold uppercase">About Me</h2>
+
+				<div class="w-32 h-32 flex items-center justify-center bg-sky-950 font-semibold text-2xl uppercase">
+					<span class="text-sky-400 mr-0">M</span><span class="text-white">R</span>
+				</div>
 
 				<span class="block w-16 border-b-4 rounded border-sky-600 my-6"></span>
 
@@ -398,7 +408,7 @@ import '../main.css';
 
 					<div x-show="formSuccess" x-cloak class="rounded-md bg-sky-50 p-4">
 						<div class="flex">
-							<div class="shrink-0">
+							<div class="hidden md:block shrink-0">
 								<svg class="size-8 text-sky-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
 								<path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
 								</svg>
