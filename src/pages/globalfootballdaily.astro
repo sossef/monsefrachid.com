@@ -1,0 +1,107 @@
+---
+import '../main.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Freeman&family=Lilita+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e9800c51cf.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+		<link rel="manifest" href="/site.webmanifest.json" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content="Monsef Rachid | Global Football Daily" />
+		<meta property="og:site_name" content="Monsef Rachid" />
+		<meta property="og:description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
+		<meta property="og:url" content="https://www.monsefrachid.com/globalfootballdaily.html" />
+		<meta property="og:image" content="https://www.monsefrachid.com/img/og1.jpg" />   
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta name="description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
+		<link rel="alternate" href="https://www.monsefrachid.com/globalfootballdaily.html" hreflang="en" />
+		<title>Monsef Rachid | Global Football Daily</title>
+	</head>
+
+	<body x-data="{ showMobileNav: false }">
+		
+		<Nav />
+
+		<section id="project" class="py-16 bg-white">
+
+			<div class="flex flex-col items-center w-full max-w-4xl mx-auto px-6 mt-16">
+
+				<h1 class="block text-black text-3xl lg:text-4xl font-bold">GlobalFootballDaily.com</h1>
+
+				<span class="block w-16 border-b-4 rounded border-sky-600 my-6"></span>
+
+				<h2 class="w-full max-w-4xl lg:text-xl text-center mb-8">Football Data Web Scraper & News Aggregation Website</h2>
+
+				<div class="grid grid-cols-2 w-full gap-8 lg:gap-16">
+
+					<div class="col-span-full">
+						<div class="w-full max-w-[450px] mx-auto md:max-w-none px-4 py-4 lg:px-12 lg:py-8 bg-slate-50 shadow-md space-y-6 rounded-sm">
+							<div class="border-2 border-gray-400 rounded">
+								<img class="w-full" src="/img/gfd-screenshot.jpg">
+								<img class="w-full" src="/img/gfd-cms-screenshot.jpg">
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Overview</h3>
+								<p class="mb-3">This project showcases a fully automated web scraper and news aggregation platform tailored for football enthusiasts. It features a robust content management system (CMS) for managing news categories, topics, data sources, and scraper rules. The backend automates data collection using topic-based scraping, ensuring relevant and up-to-date content. The frontend is designed as a user-friendly news website, neatly organized by categories and topics, providing seamless navigation and a structured presentation of curated football news. This project highlights expertise in web scraping, automation, CMS development, and frontend design.</p>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Tools Used</h3>
+								<div class="flex flex-wrap gap-2 py-2">
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Laravel</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">PHP</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">JavaScript</span>	
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Alpine.js</span>	
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">MySQL</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">HTML</span>						
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Tailwind CSS</span>	
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">GitHub Actions</span>									
+								</div>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Details</h3>
+								<ul class="list-disc ml-4 space-y-4">
+									<li>Built the application using Laravel with Blade templates for server-side rendering and Alpine.js for interactive user experiences.</li>
+									<li>Designed and implemented a responsive frontend using Tailwind CSS, ensuring a modern and user-friendly interface.</li>
+									<li>Developed a backend content management system (CMS) for managing news topics, categories, data sources, and scraping rules.</li>
+									<li>Engineered a system to customize web scrapers tailored to each website's structure, enabling administrators to easily add new data sources by defining HTML classes and attributes for scraping.</li>
+									<li>Implemented a CI/CD pipeline using GitHub Actions to automate testing, deployment, and monitoring of code changes.</li>
+									<li>Deployed the application on an AWS EC2 instance running a LAMP stack, configured with robust security measures and HTTPS encryption.</li>
+									<li>Optimized scraping logic to handle dynamic content and prevent issues with rate limits or bot detection.</li>
+									<li>Set up logging and monitoring to track scraper performance, error handling, and data collection accuracy.</li>
+									<li>Ensured scalability and maintainability by adhering to clean code principles, modular architecture, and reusable components.</li>
+									<li>Implemented automated testing, including unit tests for backend logic, integration tests for API functionality, and end-to-end tests for the scraping system and user interface.</li>								
+								</ul>
+							</div>
+							<div class="flex justify-end gap-3 lg:gap-4 pt-6 pb-2 border-t border-gray-300">								
+								<a target="_blank" href="https://www.globalfootballdaily.com" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
+									<i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live
+								</a>
+							</div>		
+						</div>
+					</div>					
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<Footer />
+		
+	</body>
+
+</html>

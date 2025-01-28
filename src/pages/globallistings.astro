@@ -1,0 +1,110 @@
+---
+import '../main.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Freeman&family=Lilita+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e9800c51cf.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+		<link rel="manifest" href="/site.webmanifest.json" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content="Monsef Rachid | Global Listings" />
+		<meta property="og:site_name" content="Monsef Rachid" />
+		<meta property="og:description" content="International Property Listings Portal">
+		<meta property="og:url" content="https://www.monsefrachid.com/globallistings.html" />
+		<meta property="og:image" content="https://www.monsefrachid.com/img/og1.jpg" />   
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta name="description" content="International Property Listings Portal">
+		<link rel="alternate" href="https://www.monsefrachid.com/globallistings.html" hreflang="en" />
+		<title>Monsef Rachid | Global Listings</title>
+	</head>
+
+	<body x-data="{ showMobileNav: false }">
+		
+		<Nav />
+
+		<section id="project" class="py-16 bg-white">
+
+			<div class="flex flex-col items-center w-full max-w-4xl mx-auto px-6 mt-16">
+
+				<h1 class="block text-black text-3xl lg:text-4xl font-bold">GlobalListings.com</h1>
+
+				<span class="block w-16 border-b-4 rounded border-sky-600 my-6"></span>
+
+				<h2 class="w-full max-w-4xl lg:text-xl text-center mb-8">International Property Listings Portal</h2>
+
+				<div class="grid grid-cols-2 w-full gap-8 lg:gap-16">
+
+					<div class="col-span-full">
+						<div class="w-full max-w-[450px] mx-auto md:max-w-none px-4 py-4 lg:px-12 lg:py-8 bg-slate-50 shadow-md space-y-6 rounded-sm">
+							<img class="w-full border-2 border-gray-400 rounded" src="/img/globallistings-screenshot.jpg">
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Overview</h3>
+								<p class="mb-3">GlobalListings.com is an international real estate listings platform designed to connect users with properties for sale or rent across more than 100 countries. The platform features a custom-built search engine that enables users to efficiently filter listings by country, city, price, and property type.</p>
+								<p class="mb-3">The platform also incorporates a monetization model with paid listing services and membership options, enabling users to post and manage their own property listings. The development process involved building scalable search functionality, implementing geospatial data processing, designing user-friendly interfaces, and integrating secure payment systems to support paid services and memberships.</p>
+								<p class="mb-3">The project involved developing a complex, feature-rich web application with a global reach, focusing on performance, usability, and seamless integration of mapping technologies to enhance the user experience.</p>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Tools Used</h3>
+								<div class="flex flex-wrap gap-2 py-2">
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Laravel</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">PHP</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">JavaScript</span>	
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">jQuery</span>					
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">MySQL</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">HTML</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Bootstrap</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">AWS</span>	
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">PayPal API</span>	
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Google Maps API</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Mapbox</span>									
+								</div>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Details</h3>
+								<ul class="list-disc ml-4 space-y-4">
+									<li>Led the development team in designing, developing, and maintaining the company's main search portal, a front-end interface for a large real estate listings database, managing over 3 million active listings.</li>
+									<li>Architected and implemented the full system infrastructure using LAMP stack on AWS EC2, ensuring scalability and performance.</li>
+									<li>Modeled and optimized the back-end database schema with MySQL to support efficient query processing and data management.</li>
+									<li>Developed a robust back-end REST API using Laravel PHP to handle listing retrieval, user management, and transactional operations.</li>
+									<li>Configured and managed development and production environments using Docker for consistent deployment and testing.</li>
+									<li>Collaborated with the UI/UX team to create a responsive and user-friendly front-end using HTML, CSS, and JavaScript.</li>
+									<li>Engineered PHP and Linux shell scripts to optimize data storage, search functionality, and content delivery performance.</li>
+									<li>Automated AWS Snapshot backups using Linux cron jobs and AWS CLI to ensure data reliability, recovery, and availability.</li>
+									<li>Strengthened website and data security by implementing AWS security groups and configuring Linux firewalls.</li>
+									<li>Designed and deployed SEO-optimized landing pages using HTML and CSS, significantly improving site visibility and search rankings.</li>
+									<li>Developed key company products and services, including real estate data APIs (built with Laravel PHP) and JavaScript affiliate web widgets for seamless integration with partner websites.</li>
+								</ul>
+							</div>
+							<div class="flex justify-end gap-3 lg:gap-4 pt-6 pb-2 border-t border-gray-300">								
+								<a target="_blank" href="https://www.globallistings.com" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
+									<i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live
+								</a>
+							</div>		
+						</div>
+					</div>					
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<Footer />
+		
+	</body>
+
+</html>

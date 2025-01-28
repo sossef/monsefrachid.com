@@ -1,0 +1,54 @@
+---
+---
+
+<div class="nav flex justify-between items-center h-20 px-4 lg:px-12 shadow-md fixed w-full bg-white">
+    <div class="flex justify-start items-center gap-x-2">
+        <img src="/img/me.jpg" class="w-14 h-14 rounded-full">
+        <div class="text-xl font-bold uppercase text-black">
+            Monsef Rachid
+        </div>
+    </div>
+    <div class="hidden lg:flex justify-between items-center gap-x-12 text-lg font-bold uppercase text-black">
+        <a href="/" class="hover:text-sky-600">Home</a>
+        <a href="/#about" class="hover:text-sky-600">About</a>
+        <a href="/#projects" class="hover:text-sky-600">Projects</a>
+        <a href="/#contact" class="hover:text-sky-600">Contact</a>
+    </div>
+    <div class="block lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" @click="showMobileNav = !showMobileNav">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </div>
+</div>
+
+<div
+    class="fixed top-0 left-0 w-full max-w-96 h-max min-h-lvh bg-gray-50 shadow-2xl"
+    x-cloak
+    x-show="showMobileNav"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0 -translate-x-full"
+    x-transition:enter-end="opacity-100 translate-x-0"
+    x-transition:leave="transition ease-in duration-300"
+    x-transition:leave-start="opacity-100 translate-x-0"
+    x-transition:leave-end="opacity-0 -translate-x-full"
+>
+    <div class="flex justify-between items-center h-20 shadow px-4">
+        <div class="flex justify-start items-center gap-x-2">
+            <img src="/img/me.jpg" class="w-14 h-14 rounded-full">
+            <div class="text-xl font-bold uppercase text-black">
+                Monsef Rachid
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" @click="showMobileNav = false">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>      
+    </div>
+
+    <div class="divide-y-2 text-xl font-bold uppercase px-5">
+        <a href="/" class="block py-4 text-black hover:text-sky-600" @click="showMobileNav = false">Home</a>
+        <a href="/#about" class="block py-4 text-black hover:text-sky-600" @click="showMobileNav = false">About</a>
+        <a href="/#projects" class="block py-4 text-black hover:text-sky-600" @click="showMobileNav = false">Projects</a>
+        <a href="/#contact" class="block py-4 text-black hover:text-sky-600" @click="showMobileNav = false">Contact</a>
+    </div>
+
+</div>

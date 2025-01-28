@@ -1,0 +1,102 @@
+---
+import '../main.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Freeman&family=Lilita+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e9800c51cf.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+		<link rel="manifest" href="/site.webmanifest.json" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content="Monsef Rachid | Advanced Project Management System for Accounting Firms" />
+		<meta property="og:site_name" content="Monsef Rachid" />
+		<meta property="og:description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
+		<meta property="og:url" content="https://www.monsefrachid.com/deskshore.html" />
+		<meta property="og:image" content="https://www.monsefrachid.com/img/og1.jpg" />   
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta name="description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
+		<link rel="alternate" href="https://www.monsefrachid.com/deskshore.html" hreflang="en" />
+		<title>Monsef Rachid | Advanced Project Management System for Accounting Firms</title>
+	</head>
+
+	<body x-data="{ showMobileNav: false }">
+		
+		<Nav />
+
+		<section id="project" class="py-16 bg-white">
+
+			<div class="flex flex-col items-center w-full max-w-4xl mx-auto px-6 mt-16">
+
+				<h1 class="block text-black text-3xl lg:text-4xl font-bold">DeskShore Web App</h1>
+
+				<span class="block w-16 border-b-4 rounded border-sky-600 my-6"></span>
+
+				<h2 class="w-full max-w-4xl lg:text-xl text-center mb-8">Advanced Project Management System for Accounting Firms</h2>
+
+				<div class="grid grid-cols-2 w-full gap-8 lg:gap-16">
+
+					<div class="col-span-full">
+						<div class="w-full max-w-[450px] mx-auto md:max-w-none px-4 py-4 lg:px-12 lg:py-8 bg-slate-50 shadow-md space-y-6 rounded-sm">
+							<img class="w-full border-2 border-gray-400 rounded" src="/img/deskshore-screenshot.jpg">
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Overview</h3>
+								<p class="mb-3">a comprehensive SaaS platform designed to streamline client, project, and operational management for accounting firms. The system provides an intuitive interface for managing client profiles, allowing firms to create custom fields and services tailored to their unique needs. This flexibility enables better organization and tracking of client-specific data, making it easier for firms to deliver personalized and efficient services.</p>
+								<p class="mb-3">The platform incorporates powerful workflow tools, allowing users to create, assign, and manage tasks seamlessly across teams. With built-in automated billing, the system simplifies invoicing by supporting customizable billing structures, ensuring accuracy and reducing manual effort. Additionally, employee time tracking is integrated into the platform, enabling firms to monitor productivity, allocate resources efficiently, and improve overall time management.</p>
+								<p class="mb-3">To support data-driven decision-making, the platform includes robust reporting tools and dynamic dashboards. These features provide real-time insights into key operational metrics, helping firms identify areas for improvement and drive better business outcomes. This project highlights my ability to design and implement complex SaaS solutions that address specific industry challenges while delivering an exceptional user experience.</p>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Tools Used</h3>
+								<div class="flex flex-wrap gap-2 py-2">
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Laravel</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">PHP</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Angular</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">MySQL</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Docker</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Twilio SMS API</span>	
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-base font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">GitLab CI/CD</span>									
+								</div>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Details</h3>
+								<ul class="list-disc ml-4 space-y-4">
+									<li>Served as project manager/lead developer responsible for building and maintaining IT infrastructure, web applications and tools used by company staff and clients.</li>
+									<li>Responsible for setting up fully automatic GitLab CI/CD pipelines for development, staging and production environments.</li>
+									<li>Managed integration and code delivery using Git and Docker containers.</li>
+									<li>Implemented automatic AWS Snapshot backups using Linux cronjobs and AWS CLI.</li>
+									<li>Responsible for setting project goals, deliverables, timelines, budgets, and resource requirements.</li>
+									<li>Spearheaded requirements elicitation and elaboration efforts.</li>
+									<li>Monitored and tracked project milestones and deliverables ensuring quality standards timely delivery.</li>
+									<li>Managed stakeholder engagement and communications.</li>
+									<li>Ensured that all project documentation is accurate and up to date.</li>
+									<li>Served as lead developer of back-end services using Laravel PHP.</li>
+									<li>Reviewed code, debugged problems, and corrected issues.</li>
+									<li>Wroten automated unit and feature tests wth PHPUnit</li>
+								</ul>
+							</div>
+						</div>
+					</div>					
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<Footer />
+		
+	</body>
+
+</html>

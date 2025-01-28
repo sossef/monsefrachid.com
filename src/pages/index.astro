@@ -1,5 +1,7 @@
 ---
 import '../main.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -32,57 +34,7 @@ import '../main.css';
 
 	<body x-data="{ showMobileNav: false }">
 		
-		<div class="nav flex justify-between items-center h-20 px-4 lg:px-12 shadow-md fixed w-full bg-white">
-			<div class="flex justify-start items-center gap-x-2">
-				<img src="/img/me.jpg" class="w-14 h-14 rounded-full">
-				<div class="text-xl font-bold uppercase text-black">
-					Monsef Rachid
-				</div>
-			</div>
-			<div class="hidden lg:flex justify-between items-center gap-x-12 text-lg font-bold uppercase text-black">
-				<a href="/" class="hover:text-sky-600">Home</a>
-				<a href="#about" class="hover:text-sky-600">About</a>
-				<a href="#projects" class="hover:text-sky-600">Projects</a>
-				<a href="#contact" class="hover:text-sky-600">Contact</a>
-			</div>
-			<div class="block lg:hidden">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" @click="showMobileNav = !showMobileNav">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-				</svg>
-			</div>
-		</div>
-
-		<div
-			class="fixed top-0 left-0 w-full max-w-96 h-max min-h-lvh bg-gray-50 shadow-2xl"
-			x-cloak
-			x-show="showMobileNav"
-			x-transition:enter="transition ease-out duration-300"
-			x-transition:enter-start="opacity-0 -translate-x-full"
-			x-transition:enter-end="opacity-100 translate-x-0"
-			x-transition:leave="transition ease-in duration-300"
-			x-transition:leave-start="opacity-100 translate-x-0"
-			x-transition:leave-end="opacity-0 -translate-x-full"
-		>
-			<div class="flex justify-between items-center h-20 shadow px-4">
-				<div class="flex justify-start items-center gap-x-2">
-					<img src="/img/me.jpg" class="w-14 h-14 rounded-full">
-					<div class="text-xl font-bold uppercase text-black">
-						Monsef Rachid
-					</div>
-				</div>
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" @click="showMobileNav = false">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-				</svg>      
-			</div>
-
-			<div class="divide-y-2 text-xl font-bold uppercase px-5">
-				<a href="/" class="block py-4 text-black hover:text-sky-600" @click="showMobileNav = false">Home</a>
-				<a href="#about" class="block py-4 text-black hover:text-sky-600" @click="showMobileNav = false">About</a>
-				<a href="#projects" class="block py-4 text-black hover:text-sky-600" @click="showMobileNav = false">Projects</a>
-				<a href="#contact" class="block py-4 text-black hover:text-sky-600" @click="showMobileNav = false">Contact</a>
-			</div>
-
-		</div>
+		<Nav />		
 
 		<section class="flex flex-col justify-center items-center text-center h-[calc(100vh)] bg-[url('/img/hero-bg-4.jpg')] bg-cover bg-center">
 			<div class="w-full max-w-7xl mx-auto px-6 space-y-8">
@@ -198,7 +150,7 @@ import '../main.css';
 
 				<span class="block w-16 border-b-4 rounded border-sky-600 my-6"></span>
 
-				<p class="w-full max-w-4xl lg:text-xl text-center">Below is a list of selected projects I've worked on, either as an independent contractor or as an employed software engineer. <a class="text-sm text-sky-600 underline" href="#">View Full Project Archive</a></p>
+				<p class="w-full max-w-4xl lg:text-xl text-center mb-8">Below is a list of selected projects I've worked on, either as an independent contractor or as an employed software engineer. <!--<a class="text-sm text-sky-600 underline" href="#">View Full Project Archive</a>--></p>
 
 				<div class="grid grid-cols-2 w-full gap-8 lg:gap-16">
 
@@ -220,12 +172,10 @@ import '../main.css';
 								<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Bootstrap</span>
 								<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">AWS</span>								
 							</div>
-							<div class="flex justify-end gap-3 lg:gap-4 pt-6 pb-2 border-t border-gray-300">
-								<!--
-								<button class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
+							<div class="flex justify-end gap-3 lg:gap-4 pt-6 pb-2 border-t border-gray-300">								
+								<a href="globallistings.html" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
 									<i class="fa-solid fa-circle-info mr-1"></i> Details
-								</button>
-								-->
+								</a>
 								<a target="_blank" href="https://www.globallistings.com" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
 									<i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live
 								</a>
@@ -253,11 +203,9 @@ import '../main.css';
 								<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">GitHub Actions</span>									
 							</div>
 							<div class="flex justify-end gap-3 lg:gap-4 pt-6 pb-2 border-t border-gray-300">
-								<!--
-								<button class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
+								<a href="propxml.html" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
 									<i class="fa-solid fa-circle-info mr-1"></i> Details
-								</button>
-								-->
+								</a>
 								<a target="_blank" href="https://propxml.com" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
 									<i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live
 								</a>
@@ -286,13 +234,8 @@ import '../main.css';
 								<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">GitLab CI/CD</span>									
 							</div>
 							<div class="flex justify-end gap-3 lg:gap-4 pt-6 pb-2 border-t border-gray-300">
-								<!--
-								<button class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
+								<a href="deskshore.html" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
 									<i class="fa-solid fa-circle-info mr-1"></i> Details
-								</button>
-								-->
-								<a target="_blank" href="https://app.deskshore.com" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
-									<i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live
 								</a>
 							</div>		
 						</div>
@@ -317,11 +260,9 @@ import '../main.css';
 								<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">PayPal API</span>								
 							</div>
 							<div class="flex justify-end gap-3 lg:gap-4 pt-6 pb-2 border-t border-gray-300">
-								<!--
-								<button class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
+								<a href="worldpropertyjournal.html" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
 									<i class="fa-solid fa-circle-info mr-1"></i> Details
-								</button>
-								-->
+								</a>
 								<a target="_blank" href="https://www.worldpropertyjournal.com" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
 									<i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live
 								</a>
@@ -331,7 +272,7 @@ import '../main.css';
 
 					<div class="col-span-full md:col-span-1">
 						<div class="w-full max-w-[450px] mx-auto md:max-w-none px-4 py-4 lg:px-12 lg:py-8 bg-slate-50 shadow-md space-y-4 rounded-sm">
-							<img class="w-full h-72 md:h-[340px] border-2 border-gray-400 rounded" src="/img/realestate-api-screenshot.jpg">
+							<img class="w-full h-72 md:h-[340px] border-2 border-gray-400 rounded" src="/img/realestateapi-screenshot.jpg">
 							<div>								
 								<h3 class="font-semibold text-xl">Real Estate API</h3>
 								<h4 class="font-medium text-sky-600">Property Listings & Real Estate News API</h4>
@@ -344,11 +285,9 @@ import '../main.css';
 								<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">AWS</span>						
 							</div>
 							<div class="flex justify-end gap-3 lg:gap-4 pt-6 pb-2 border-t border-gray-300">
-								<!--
-								<button class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
+								<a href="realestateapi.html" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
 									<i class="fa-solid fa-circle-info mr-1"></i> Details
-								</button>
-								-->
+								</a>
 								<a target="_blank" href="https://www.globallistings.com/real-estate-listings-api-data-licensing" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
 									<i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live
 								</a>
@@ -378,11 +317,9 @@ import '../main.css';
 								<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">GitHub Actions</span>									
 							</div>
 							<div class="flex justify-end gap-3 lg:gap-4 pt-6 pb-2 border-t border-gray-300">
-								<!--
-								<button class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
+								<a href="globalfootballdaily.html" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
 									<i class="fa-solid fa-circle-info mr-1"></i> Details
-								</button>
-								-->
+								</a>
 								<a target="_blank" href="https://www.globalfootballdaily.com" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
 									<i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live
 								</a>
@@ -470,37 +407,43 @@ import '../main.css';
 
 		</section>
 
-		<footer class="bg-gradient-to-l from-gray-900 to-black text-gray-100">
-			<div class="w-full max-w-4xl mx-auto px-6">			
-				<div class="py-12 border-b border-gray-700 space-y-6 text-center">	
-					<div class="text-2xl uppercase">Monsef Rachid</div>
-					<p class="max-w-2xl mx-auto text-sm">Information technology consultant and software engineer with extensive experience in web application development and information retrieval across a wide range of industries.</p>					
-					<div class="flex justify-center gap-x-4 text-2xl">
-						<a class="hover:text-sky-400" target="_blank" href="https://www.linkedin.com/in/monsef-rachid-92720a41/"><i class="fa-brands fa-linkedin-in"></i></a>
-						<a class="hover:text-sky-400" target="_blank" href="https://github.com/sossef"><i class="fa-brands fa-github"></i></a>
-					</div>	
-					<p class="max-w-2xl mx-auto text-sm text-bold text-sky-300">contact@monsefrachid.com</p>
-				</div>	
-				<div class="py-8 text-sm text-center">
-					Copyright 2025. Made by <b>Monsef Rachid</b>
-				</div>	
-			</div>
-		</footer>	
+		<Footer />
 		
-		<script>
-			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		<script>			
+			document.querySelectorAll('a[href*="#"]').forEach(anchor => {
 				anchor.addEventListener('click', function (e) {
-					e.preventDefault();
-					const targetId = this.getAttribute('href');
-					const targetElement = document.querySelector(targetId);
+					const href = this.getAttribute('href');
+					const [path, hash] = href.split('#');
+					const currentPath = window.location.pathname;
 
+					if (path === currentPath || path === '') {
+						e.preventDefault();
+						const targetElement = document.querySelector(`#${hash}`);
+						if (targetElement) {
+							window.scrollTo({
+							top: targetElement.offsetTop - document.querySelector('.nav').clientHeight,
+							behavior: 'smooth'
+							});
+						}
+					} else {
+						e.preventDefault();
+						window.location.href = `${path}#${hash}`;
+					}
+				});
+			});
+
+			window.addEventListener('load', () => {
+				const hash = window.location.hash; 
+				if (hash) {
+					const targetElement = document.querySelector(hash);
+					if (targetElement) {
 					window.scrollTo({
 						top: targetElement.offsetTop - document.querySelector('.nav').clientHeight,
 						behavior: 'smooth'
 					});
-				});
+					}
+				}
 			});
-
 		</script>
 		
 	</body>
