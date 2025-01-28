@@ -2,6 +2,7 @@
 import '../main.css';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import GoogleAnalyticsTag from '../components/GoogleAnalyticsTag.astro';
 ---
 
 <html lang="en">
@@ -30,6 +31,8 @@ import Footer from '../components/Footer.astro';
 		<meta name="description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
 		<link rel="alternate" href="https://www.monsefrachid.com/realestateapi" hreflang="en" />
 		<title>Monsef Rachid | Real Estate Listings API</title>
+
+		<GoogleAnalyticsTag />
 	</head>
 
 	<body x-data="{ showMobileNav: false }">

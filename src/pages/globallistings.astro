@@ -2,6 +2,7 @@
 import '../main.css';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import GoogleAnalyticsTag from '../components/GoogleAnalyticsTag.astro';
 ---
 
 <html lang="en">
@@ -30,6 +31,8 @@ import Footer from '../components/Footer.astro';
 		<meta name="description" content="International Property Listings Portal">
 		<link rel="alternate" href="https://www.monsefrachid.com/globallistings" hreflang="en" />
 		<title>Monsef Rachid | Global Listings</title>
+
+		<GoogleAnalyticsTag />
 	</head>
 
 	<body x-data="{ showMobileNav: false }">
