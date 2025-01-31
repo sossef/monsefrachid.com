@@ -1,0 +1,116 @@
+---
+import '../main.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import GoogleAnalyticsTag from '../components/GoogleAnalyticsTag.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Freeman&family=Lilita+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e9800c51cf.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+		<link rel="manifest" href="/site.webmanifest.json" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content="Monsef Rachid | Real Estate XML Feed Generator SaaS" />
+		<meta property="og:site_name" content="Monsef Rachid" />
+		<meta property="og:description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
+		<meta property="og:url" content="https://www.monsefrachid.com/propxml" />
+		<meta property="og:image" content="https://www.monsefrachid.com/img/og1.jpg" />   
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta name="description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
+		<link rel="alternate" href="https://www.monsefrachid.com/propxml" hreflang="en" />
+		<title>Monsef Rachid | Real Estate XML Feed Generator SaaS</title>
+
+		<GoogleAnalyticsTag />
+	</head>
+
+	<body x-data="{ showMobileNav: false }">
+		
+		<Nav />
+
+		<section id="project" class="py-16 bg-white">
+
+			<div class="flex flex-col items-center w-full max-w-4xl mx-auto px-6 mt-16">
+
+				<h1 class="block text-black text-3xl lg:text-4xl font-bold">Craigslist Alerts</h1>
+
+				<span class="block w-16 border-b-4 rounded border-sky-600 my-6"></span>
+
+				<h2 class="w-full max-w-4xl lg:text-xl text-center mb-8">Web scraper with CMS to monitor Craigslist and notify users of new matching listings.</h2>
+
+				<div class="grid grid-cols-2 w-full gap-8 lg:gap-16">
+
+					<div class="col-span-full">
+						<div class="w-full max-w-[450px] mx-auto md:max-w-none px-4 py-4 lg:px-12 lg:py-8 bg-slate-50 shadow-md space-y-6 rounded-sm">
+							<img class="w-full border-2 border-gray-400 rounded" src="/img/propxml-screenshot.jpg">
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Overview</h3>
+								<p class="mb-3">This project is a web application that allows users to create and manage alerts for new Craigslist posts based on specified criteria. Users can configure alerts by selecting a location, category, and page, as well as defining keyword filters, price ranges, and whether the post includes images.</p>
+								<p class="mb-3">The system consists of two main components:</p>
+								<ul class="list-disc ml-4 mb-3 space-y-2">
+									<li>Web Application - Built for users to manage alerts, update preferences, and receive email notifications.</li>
+									<li>Web Scraper - A Python-based scraper that periodically checks Craigslist for new posts matching user-defined criteria and triggers email notifications.</li>
+								</ul>
+								<p class="mb-3">The project demonstrates full-stack development skills, including backend logic for scheduling and managing alerts, a user-friendly interface for configuration, and efficient web scraping techniques for data retrieval and automation.</p>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Tools Used</h3>
+								<div class="flex flex-wrap gap-2 py-2">
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Python</span>										
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">PHP</span>
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Laravel</span>
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">JavaScript</span>	
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Alpine.js</span>	
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">MySQL</span>
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">HTML</span>						
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Tailwind CSS</span>								
+								</div>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Details</h3>
+								<ul class="list-disc ml-4 space-y-4">
+									<li>Developed the application using Laravel with Blade templates for server-side rendering.</li>
+									<li>Implemented user interactivity using Alpine.js for a dynamic and responsive experience.</li>
+									<li>Designed the front-end with Tailwind CSS for a clean and modern UI.</li>
+									<li>Built a backend CMS to manage user accounts, alert settings, and retrieved listings archive.</li>
+									<li>Designed and developed a Craigslist-specific web scraper in Python to fetch and process listings.</li>
+									<li>Created a REST API to allow integration with potential mobile applications.</li>
+									<li>Implemented unit, feature, and API endpoint tests to ensure application reliability.</li>
+									<li>Designed a scheduling system to periodically trigger web scraping and send alerts.</li>
+									<li>Integrated an email notification system to alert users of new matching listings.</li>
+									<li>Implemented data storage and indexing for efficient retrieval of historical search results.</li>
+									<li>Optimized the scraper for performance and rate-limiting compliance with Craigslist.</li>
+									<li>Ensured security best practices, including input validation and user authentication.</li>
+									<li>Deployed the application to a production environment with automated deployment workflows.</li>									
+								</ul>
+							</div>
+							<div class="flex justify-end gap-3 lg:gap-4 pt-6 pb-2 border-t border-gray-300">								
+								<a target="_blank" href="https://propxml.com" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
+									<i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live
+								</a>
+							</div>		
+						</div>
+					</div>					
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<Footer />
+		
+	</body>
+
+</html>
