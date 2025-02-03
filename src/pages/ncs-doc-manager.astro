@@ -1,0 +1,97 @@
+---
+import '../main.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import GoogleAnalyticsTag from '../components/GoogleAnalyticsTag.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Freeman&family=Lilita+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e9800c51cf.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+		<link rel="manifest" href="/site.webmanifest.json" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content="Monsef Rachid | Document Management Automation" />
+		<meta property="og:site_name" content="Monsef Rachid" />
+		<meta property="og:description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
+		<meta property="og:url" content="https://www.monsefrachid.com/ncs-doc-manager" />
+		<meta property="og:image" content="https://www.monsefrachid.com/img/og1.jpg" />   
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta name="description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
+		<link rel="alternate" href="https://www.monsefrachid.com/ncs-doc-manager" hreflang="en" />
+		<title>Monsef Rachid | Document Management Automation</title>
+
+		<GoogleAnalyticsTag />
+	</head>
+
+	<body x-data="{ showMobileNav: false }">
+		
+		<Nav />
+
+		<section id="project" class="py-16 bg-white">
+
+			<div class="flex flex-col items-center w-full max-w-4xl mx-auto px-6 mt-16">
+
+				<h1 class="block text-black text-3xl lg:text-4xl font-bold">Document Processing Automation</h1>
+
+				<span class="block w-16 border-b-4 rounded border-sky-600 my-6"></span>
+
+				<h2 class="w-full max-w-4xl lg:text-xl text-center mb-8">Public Records Data Retrieval & Document Processing Automation</h2>
+
+				<div class="grid grid-cols-2 w-full gap-8 lg:gap-16">
+
+					<div class="col-span-full">
+						<div class="w-full max-w-[450px] mx-auto md:max-w-none px-4 py-4 lg:px-12 lg:py-8 bg-slate-50 shadow-md space-y-6 rounded-sm">
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Overview</h3>
+								<p class="mb-3">Python-based application to streamline document management for a title company. The application automates the periodic import of data into a local database, processing folders of image files in various formats. It intelligently organizes and merges related images into structured PDF documents, ensuring consistency and accessibility. The system reduces manual effort, enhances efficiency, and provides employees with a streamlined workflow for handling title-related documents.</p>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Tools Used</h3>
+								<div class="flex flex-wrap gap-2 py-2">
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Python</span>										
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">OpenCV</span>
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">PDFKit</span>	
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">Miscrosoft SQL Server</span>							
+								</div>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Details</h3>
+								<ul class="list-disc ml-4 space-y-4">
+									<li>Gathered requirements from the title company to understand workflow and automation needs.</li>
+									<li>Defined key functionalities, including automatic data import, image processing, and PDF generation.</li>
+									<li>Selected appropriate technologies and libraries for efficient implementation.</li>
+									<li>Developed a script to periodically scan and import folders of image files into a local database.</li>
+									<li>Implemented error handling and logging mechanisms to track import status.</li>
+									<li>Processed various image formats using OpenCV and Pillow to enhance and standardize document quality.</li>
+									<li>Implemented logic to identify and merge related images into structured PDF documents.</li>
+									<li>Stored document metadata in a relational database for indexing and retrieval.</li>
+									<li>Tested the application with real-world datasets to ensure accuracy and reliability.</li>
+									<li>Provided documentation and user training to ensure smooth adoption.</li>
+								</ul>
+							</div>
+						</div>
+					</div>					
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<Footer />
+		
+	</body>
+
+</html>

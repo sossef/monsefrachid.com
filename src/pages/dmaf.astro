@@ -1,0 +1,103 @@
+---
+import '../main.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import GoogleAnalyticsTag from '../components/GoogleAnalyticsTag.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Freeman&family=Lilita+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e9800c51cf.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+		<link rel="manifest" href="/site.webmanifest.json" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content="Monsef Rachid | Digital Media Research Tool for the Digital Media Alliance of Florida" />
+		<meta property="og:site_name" content="Monsef Rachid" />
+		<meta property="og:description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
+		<meta property="og:url" content="https://www.monsefrachid.com/dmaf" />
+		<meta property="og:image" content="https://www.monsefrachid.com/img/og1.jpg" />   
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta name="description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
+		<link rel="alternate" href="https://www.monsefrachid.com/dmaf" hreflang="en" />
+		<title>Monsef Rachid | Digital Media Research Tool for the Digital Media Alliance of Florida</title>
+
+		<GoogleAnalyticsTag />
+	</head>
+
+	<body x-data="{ showMobileNav: false }">
+		
+		<Nav />
+
+		<section id="project" class="py-16 bg-white">
+
+			<div class="flex flex-col items-center w-full max-w-4xl mx-auto px-6 mt-16">
+
+				<h1 class="block text-black text-3xl lg:text-4xl font-bold">Digital Media Research Tool</h1>
+
+				<span class="block w-16 border-b-4 rounded border-sky-600 my-6"></span>
+
+				<h2 class="w-full max-w-4xl lg:text-xl text-center mb-8">Digital Media Research Tool for the Digital Media Alliance of Florida</h2>
+
+				<div class="grid grid-cols-2 w-full gap-8 lg:gap-16">
+
+					<div class="col-span-full">
+						<div class="w-full max-w-[450px] mx-auto md:max-w-none px-4 py-4 lg:px-12 lg:py-8 bg-slate-50 shadow-md space-y-6 rounded-sm">
+							<img class="w-full border-2 border-gray-400 rounded" src="/img/dmaf-screenshot.jpg">
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Overview</h3>
+								<p class="mb-3">This web application was built as a research tool for the Digital Media Alliance of Florida, designed to collect and classify data on digital media companies across the state. The project involved developing a web scraper to extract company information from public records, structuring the data in a database organized by county, and importing NAICS codes for classification.</p>
+								<p class="mb-3">To enhance accuracy, I implemented a variant of Latent Semantic Indexing (LSI) to analyze company names, descriptions, and other metadata, allowing the system to automatically determine the business category of each company. The platform features an intuitive web interface that enables researchers to review, verify, and correct classifications as needed. Additionally, I integrated Mapbox to provide a visual representation of digital media companies across Florida.</p>
+								<p class="mb-3">This project showcases my ability to build end-to-end data-driven applications, combining web scraping, data processing, machine learning-based classification, and interactive visualization to support research and decision-making.</p>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Tools Used</h3>
+								<div class="flex flex-wrap gap-2 py-2">
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">PHP</span>										
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">MySQL</span>
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">TCPDF</span>	
+										<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">MapBox</span>	
+								</div>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Details</h3>
+								<ul class="list-disc ml-4 space-y-4">
+									<li><strong>Requirement Analysis:</strong> Gathered specifications from the Digital Media Alliance of Florida to define project goals and data requirements.</li>
+									<li><strong>Data Collection:</strong> Developed a web scraper to extract company information from public records and structured the data into a relational database.</li>
+									<li><strong>Data Organization:</strong> Categorized companies by county and imported NAICS codes for industry classification.</li>
+									<li><strong>Automated Classification:</strong> Implemented a variant of Latent Semantic Indexing (LSI) to classify companies based on names, descriptions, and other metadata.</li>
+									<li><strong>Database Design:</strong> Designed a scalable database schema to store company records, classification results, and manual adjustments by researchers.</li>
+									<li><strong>Web Interface Development:</strong> Built an intuitive web-based dashboard for researchers to review and refine classifications.</li>
+									<li><strong>Data Visualization:</strong> Integrated Mapbox to plot digital media companies across Florida for spatial analysis.</li>
+									<li><strong>Search and Filtering:</strong> Implemented advanced search and filtering capabilities to allow researchers to easily navigate the dataset.</li>
+									<li><strong>User Access and Permissions:</strong> Developed user authentication and role-based access control for secure data management.</li>
+									<li><strong>Performance Optimization:</strong> Optimized database queries and caching mechanisms for fast data retrieval and processing.</li>
+									<li><strong>Data Integrity and Validation:</strong> Implemented validation rules to ensure accurate and clean data ingestion.</li>
+									<li><strong>Deployment:</strong> Deployed the application to a production environment with security best practices in place.</li>
+									<li><strong>Maintenance & Iteration:</strong> Provided ongoing improvements based on researcher feedback, refining classification algorithms and user experience.</li>
+								</ul>
+							</div>
+						</div>
+					</div>					
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<Footer />
+		
+	</body>
+
+</html>
