@@ -1,0 +1,113 @@
+---
+import '../main.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import GoogleAnalyticsTag from '../components/GoogleAnalyticsTag.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Freeman&family=Lilita+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e9800c51cf.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+		<link rel="manifest" href="/site.webmanifest.json" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content="Monsef Rachid | Versatile Traffic Data, Inc. Website" />
+		<meta property="og:site_name" content="Monsef Rachid" />
+		<meta property="og:description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
+		<meta property="og:url" content="https://www.monsefrachid.com/versatiletrafficdata" />
+		<meta property="og:image" content="https://www.monsefrachid.com/img/og1.jpg" />   
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta name="description" content="Software engineer & technology consultant with experience in web application development and information retrieval across a wide range of industries.">
+		<link rel="alternate" href="https://www.monsefrachid.com/versatiletrafficdata" hreflang="en" />
+		<title>Monsef Rachid | Versatile Traffic Data, Inc. Website</title>
+
+		<GoogleAnalyticsTag />
+	</head>
+
+	<body x-data="{ showMobileNav: false }">
+		
+		<Nav />
+
+		<section id="project" class="py-16 bg-white">
+
+			<div class="flex flex-col items-center w-full max-w-4xl mx-auto px-6 mt-16">
+
+				<h1 class="block text-black text-3xl lg:text-4xl font-bold">VersatileTrafficData.com</h1>
+
+				<span class="block w-16 border-b-4 rounded border-sky-600 my-6"></span>
+
+				<h2 class="w-full max-w-4xl lg:text-xl text-center mb-8">Versatile Traffic Data, Inc. Website</h2>
+
+				<div class="grid grid-cols-2 w-full gap-8 lg:gap-16">
+
+					<div class="col-span-full">
+						<div class="w-full max-w-[450px] mx-auto md:max-w-none px-4 py-4 lg:px-12 lg:py-8 bg-slate-50 shadow-md space-y-6 rounded-sm">
+							<img class="w-full border-2 border-gray-400 rounded" src="/img/versatiletrafficdata-screenshot.jpg">
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Overview</h3>
+
+								<p class="mb-3"></p>I developed the official website for Versatile Traffic Data, Inc., a company specializing in traffic data collection and analysis. The site was built using WordPress, providing a clean and structured layout to showcase the company’s services, expertise, and contact information.</p>
+								<p class="mb-3">Key aspects of the project:</p>
+								<ul class="list-disc ml-4 space-y-2 mb-3">
+									<li><strong>Custom WordPress Implementation</strong> - Built a responsive and user-friendly website tailored to the company’s needs.</li>
+									<li><strong>Content Organization</strong> - Structured service offerings and company details for clear navigation and accessibility.</li>
+									<li><strong>Performance & SEO Considerations</strong> - Optimized page speed, mobile responsiveness, and metadata to improve visibility.</li>
+									<li><strong>Maintainability</strong> - Leveraged WordPress's CMS capabilities for easy content updates.</li>
+								</ul>
+								<p class="mb-3">This project highlights my ability to develop functional and scalable websites using WordPress while focusing on usability and business objectives.</p>								
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Tools Used</h3>
+								<div class="flex flex-wrap gap-2 py-2">
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">WordPress</span>
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">PHP</span>										
+									<span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 ring-1 ring-inset ring-sky-500/10">MySQL</span>	
+								</div>
+							</div>
+							<div>
+								<h3 class="text-2xl font-semibold mb-4 text-gray-800">Project Details</h3>
+								<ul class="list-disc ml-4 space-y-4">
+									<li><strong>Technology Stack:</strong> Built using WordPress for flexibility, scalability, and ease of content management.</li>
+									<li><strong>Custom Theme & Styling:</strong> Customized a WordPress theme to align with the company’s branding and user experience requirements.</li>
+									<li><strong>Responsive Design:</strong> Ensured a mobile-friendly layout with a responsive UI, making the website accessible across all devices.</li>
+									<li><strong>SEO Best Practices:</strong> Implemented structured metadata, alt tags, clean URL structures, and performance improvements for better search engine ranking.</li>
+									<li><strong>Custom Content Architecture:</strong> Designed a logical content structure with intuitive navigation for easy access to services and company information.</li>
+									<li><strong>WordPress Plugin Integration:</strong> Incorporated essential plugins for functionality such as contact forms, SEO, security, and caching.</li>
+									<li><strong>Security Enhancements:</strong> Configured SSL, applied best security practices, and implemented protection against common WordPress vulnerabilities.</li>
+									<li><strong>Hosting & Deployment:</strong> Set up hosting, configured domain settings, and optimized the server environment for stability and speed.</li>
+									<li><strong>Google Analytics & Tracking:</strong> Integrated Google Analytics for visitor insights and tracking user engagement.</li>
+									<li><strong>Contact Form & Lead Generation:</strong> Implemented and tested form submissions for client inquiries and service requests.</li>
+									<li><strong>Testing & Debugging:</strong> Conducted cross-browser testing, fixed UI inconsistencies, and ensured a smooth user experience.</li>
+									<li><strong>Ongoing Maintenance:</strong> Provided updates, security patches, and performance enhancements post-launch.</li>
+								</ul>
+							</div>
+							<div class="flex justify-end gap-3 lg:gap-4 pt-6 pb-2 border-t border-gray-300">								
+								<a target="_blank" href="https://versatiletrafficdata.com" class="px-2 py-1 lg:px-4 lg:py-2 bg-white outline outline-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white text-sm font-normal rounded-sm">
+									<i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live
+								</a>
+							</div>		
+						</div>
+					</div>					
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<Footer />
+		
+	</body>
+
+</html>
